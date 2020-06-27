@@ -1,0 +1,24 @@
+<form action="#">
+  <p class="range-field">
+    <input
+      type="range"
+      id="font-size"
+      min="0"
+      max="100"
+      [value]="fontSize"
+      (input)="fontChanged($event.target.valueAsNumber)"
+    />
+    <label for="font-size">Font Size</label>
+  </p>
+</form>
+<p>{{ fontSize }}</p>
+
+<span
+  [style.font-size.px]="fontSize"
+  [@changeSize]="{
+    value: fontSize,
+    params: { inFontSize: fontSize }
+  }"
+>
+  The quick brown fox jumps over the lazy dog
+</span>
