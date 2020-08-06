@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { changeStatus, staggerList } from '../animations';
-
 import {
   Employee,
   EmployeeLoaderService
 } from './employee-loader.service';
+import { changeStatus, listArrival } from './employee.animations';
 
 @Component({
   selector: 'employee-component',
   templateUrl: './employee.component.html',
-  animations: [changeStatus, staggerList]
+  animations: [changeStatus, listArrival]
 })
 export class EmployeeComponent {
   employees: Observable<Employee[]>;

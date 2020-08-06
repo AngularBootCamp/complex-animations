@@ -4,7 +4,7 @@
       Employee Processing Status: {{ status }}
     </div>
     <ng-container *ngIf="employees | async as containerEmployees">
-      <ul class="collection" @staggerList>
+      <ul class="collection" @listArrival>
         <li
           class="collection-item"
           *ngFor="let e of containerEmployees"

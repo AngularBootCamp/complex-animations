@@ -8,12 +8,32 @@ const routes: Routes = [
     loadChildren: () =>
       import('./employee-processing/employee.module').then(
         m => m.EmployeeModule
-      )
+      ),
+    data: { name: 'EmployeeProcessing' }
   },
   {
-    path: 'cms',
+    path: 'fluid-cms',
     loadChildren: () =>
-      import('./cms/cms.module').then(m => m.CmsModule)
+      import('./fluid-cms/fluid-cms.module').then(
+        m => m.CmsFluidModule
+      ),
+    data: { name: 'FluidCMS' }
+  },
+  {
+    path: 'static-cms',
+    loadChildren: () =>
+      import('./static-cms/static-cms.module').then(
+        m => m.CmsStaticModule
+      ),
+    data: { name: 'StaticCMS' }
+  },
+  {
+    path: 'silicon-wafers',
+    loadChildren: () =>
+      import('./silicon-wafers/silicon-wafers.module').then(
+        m => m.SiliconWafersModule
+      ),
+    data: { name: 'SiliconWafers' }
   }
 ];
 
