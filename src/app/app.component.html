@@ -19,7 +19,7 @@
   </nav>
 </header>
 <div
-  [@routeChange]="outletRef?.activatedRouteData?.name"
+  [@routeChange]="outletRef?.activatedRouteData?.['name']"
   id="router-container"
 >
   <router-outlet #outletRef="outlet"></router-outlet>
