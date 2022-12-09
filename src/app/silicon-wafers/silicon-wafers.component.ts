@@ -10,6 +10,6 @@ import { updateSimulation } from './silicon-wafers.animations';
   animations: [updateSimulation]
 })
 export class SiliconWafersComponent {
-  etchDepth = new FormControl(50);
-  etchTime = new FormControl(3);
+  etchDepth = new FormControl(50, { nonNullable: true });
+  etchTime = new FormControl(3, { nonNullable: true });
 }
