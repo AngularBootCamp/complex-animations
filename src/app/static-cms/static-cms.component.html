@@ -10,7 +10,12 @@
     </div>
     <div class="range-field">
       <span class="range-label">12px</span>
-      <input type="range" formControlName="size" min="12" max="35" />
+      <input
+        type="range"
+        [formControl]="sizeAndSpeed.controls.size"
+        min="12"
+        max="35"
+      />
       <span class="range-label">35px</span>
     </div>
   </div>
@@ -25,7 +30,7 @@
       <span class="range-label">250ms</span>
       <input
         type="range"
-        formControlName="animationSpeed"
+        [formControl]="sizeAndSpeed.controls.animationSpeed"
         min="250"
         max="2000"
       />

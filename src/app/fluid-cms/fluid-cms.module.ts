@@ -15,7 +15,6 @@ const cmsRoutes: Routes = [
     CommonModule,
     RouterModule.forChild(cmsRoutes),
     ReactiveFormsModule
-  ],
-  bootstrap: [CmsFluidComponent]
+  ]
 })
 export class CmsFluidModule {}

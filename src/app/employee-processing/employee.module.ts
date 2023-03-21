@@ -15,7 +15,6 @@ const employeeRoutes: Routes = [
     CommonModule,
     HttpClientModule,
     RouterModule.forChild(employeeRoutes)
-  ],
-  bootstrap: [EmployeeComponent]
+  ]
 })
 export class EmployeeModule {}
