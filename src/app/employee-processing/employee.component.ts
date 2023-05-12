@@ -8,7 +8,7 @@ import {
 import { changeStatus, listArrival } from './employee.animations';
 
 @Component({
-  selector: 'employee-component',
+  selector: 'app-employee-component',
   templateUrl: './employee.component.html',
   animations: [changeStatus, listArrival]
 })

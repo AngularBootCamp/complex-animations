@@ -16,7 +16,7 @@ export const shrinkText = [
 ];
 
 @Component({
-  selector: 'static-cms-component',
+  selector: 'app-static-cms-component',
   templateUrl: './static-cms.component.html',
   styleUrls: ['./static-cms.component.scss']
 })

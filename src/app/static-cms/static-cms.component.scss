@@ -1,4 +1,7 @@
-.two-across {
+@use 'layout';
+
+form {
+  @include layout.two-across;
   justify-items: center;
 }
 

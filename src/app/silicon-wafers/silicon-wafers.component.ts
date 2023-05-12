@@ -4,7 +4,7 @@ import { FormControl } from '@angular/forms';
 import { updateSimulation } from './silicon-wafers.animations';
 
 @Component({
-  selector: 'wafers-component',
+  selector: 'app-wafers-component',
   templateUrl: './silicon-wafers.component.html',
   styleUrls: ['./silicon-wafers.component.scss'],
   animations: [updateSimulation]

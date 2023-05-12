@@ -4,7 +4,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { shrinkTextOnUpdate } from './fluid-cms.animations';
 
 @Component({
-  selector: 'fluid-cms-component',
+  selector: 'app-fluid-cms-component',
   templateUrl: './fluid-cms.component.html',
   animations: [shrinkTextOnUpdate],
   styleUrls: ['./fluid-cms.component.scss']

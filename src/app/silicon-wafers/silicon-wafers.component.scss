@@ -1,4 +1,7 @@
-.two-across {
+@use 'layout';
+
+.etch-controls {
+  @include layout.two-across;
   justify-items: center;
 }
 
