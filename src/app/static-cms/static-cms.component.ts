@@ -5,7 +5,11 @@ import {
   style
 } from '@angular/animations';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule
+} from '@angular/forms';
 
 export const shrinkText = [
   style({ 'font-size': '45px' }),
@@ -18,9 +22,11 @@ export const shrinkText = [
 @Component({
   selector: 'app-static-cms-component',
   templateUrl: './static-cms.component.html',
-  styleUrls: ['./static-cms.component.scss']
+  styleUrls: ['./static-cms.component.scss'],
+  standalone: true,
+  imports: [ReactiveFormsModule]
 })
-export class CmsStaticComponent {
+export default class CmsStaticComponent {
   @ViewChild('sampleText') elementRef: ElementRef | undefined;
   private player: AnimationPlayer | undefined;
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 import { updateSimulation } from './silicon-wafers.animations';
 
@@ -7,9 +7,11 @@ import { updateSimulation } from './silicon-wafers.animations';
   selector: 'app-wafers-component',
   templateUrl: './silicon-wafers.component.html',
   styleUrls: ['./silicon-wafers.component.scss'],
-  animations: [updateSimulation]
+  animations: [updateSimulation],
+  standalone: true,
+  imports: [ReactiveFormsModule]
 })
-export class SiliconWafersComponent {
+export default class SiliconWafersComponent {
   etchDepth = new FormControl(50, { nonNullable: true });
   etchTime = new FormControl(3, { nonNullable: true });
 }
