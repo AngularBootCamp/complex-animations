@@ -11,7 +11,7 @@ import { shrinkTextOnUpdate } from './fluid-cms.animations';
   selector: 'app-fluid-cms-component',
   templateUrl: './fluid-cms.component.html',
   animations: [shrinkTextOnUpdate],
-  styleUrls: ['./fluid-cms.component.scss'],
+  styleUrl: './fluid-cms.component.scss',
   standalone: true,
   imports: [ReactiveFormsModule]
 })

@@ -6,7 +6,7 @@ import { updateSimulation } from './silicon-wafers.animations';
 @Component({
   selector: 'app-wafers-component',
   templateUrl: './silicon-wafers.component.html',
-  styleUrls: ['./silicon-wafers.component.scss'],
+  styleUrl: './silicon-wafers.component.scss',
   animations: [updateSimulation],
   standalone: true,
   imports: [ReactiveFormsModule]

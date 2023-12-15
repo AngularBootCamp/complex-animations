@@ -22,7 +22,7 @@ export const shrinkText = [
 @Component({
   selector: 'app-static-cms-component',
   templateUrl: './static-cms.component.html',
-  styleUrls: ['./static-cms.component.scss'],
+  styleUrl: './static-cms.component.scss',
   standalone: true,
   imports: [ReactiveFormsModule]
 })

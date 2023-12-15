@@ -10,7 +10,7 @@ import { routeChange } from './routing.animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrl: './app.component.scss',
   animations: [routeChange],
   standalone: true,
   imports: [RouterLinkActive, RouterLink, RouterOutlet]
