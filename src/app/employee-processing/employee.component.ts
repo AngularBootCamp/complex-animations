@@ -1,4 +1,4 @@
-import { NgIf, NgFor, AsyncPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -13,7 +13,7 @@ import { changeStatus, listArrival } from './employee.animations';
   templateUrl: './employee.component.html',
   animations: [changeStatus, listArrival],
   standalone: true,
-  imports: [NgIf, NgFor, AsyncPipe]
+  imports: [AsyncPipe]
 })
 export default class EmployeeComponent {
   employees: Observable<Employee[]>;
