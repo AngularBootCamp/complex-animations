@@ -1,6 +1,6 @@
 import { ExtraOptions, Routes } from '@angular/router';
 
-export const routes: Routes = [
+export const appRoutes: Routes = [
   { path: '', redirectTo: 'employee-processing', pathMatch: 'full' },
   {
     path: 'employee-processing',
